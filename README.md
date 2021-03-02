@@ -1,2 +1,2 @@
-# pokedex_Django
-A pokedex using Django and pokeapi
+# pokedex_Flask
+A pokedex using Flask and pokeapi
