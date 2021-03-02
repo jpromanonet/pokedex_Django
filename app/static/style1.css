@@ -1,0 +1,200 @@
+@import url("http://db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon");
+@font-face {font-family: "Pokemon";
+    src: url("http://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon") format("svg"); /* iOS 4.1- */
+}
+
+@keyframes holoSparkle {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes holoGradient {
+  3% {
+    opacity: 0;
+  }
+  5% {
+    background-position: 0% 0%;
+  }
+  7% {
+    opacity: 0.5;
+  }
+  9% {
+    background-position: 100% 100%;
+  }
+  11% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    background-position: 100% 100%;
+  }
+  55% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0;
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: rgb(251, 55, 55);
+    line-height: 1.5;
+    font-family: "Pokemon", cursive;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+main {
+    padding: 1rem;
+    max-width: 1100px;
+    margin: auto;
+}
+
+main > nav > h1 {
+    text-align: center;
+    color: rgb(231, 229, 36);
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    /*text-transform: uppercase;*/
+}
+
+main > nav > h3 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    /*text-transform: uppercase;*/
+}
+
+#app {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 12rem auto;
+    background: rgba(4, 133, 17, 0.6);
+    color: rgb(231, 229, 36);
+    padding: 1rem;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif");
+    border-radius: 10px;
+    border-top: 0.5px solid rgba(4, 133, 17, 0.6);
+    border-bottom: 0.5px solid rgba(4, 133, 17, 0.6);
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    position: relative;
+    overflow: hidden;
+    /*cursor: pointer;*/
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card--id {
+    background: rgb(0, 0, 0);
+    width: 3rem;
+    color: #ffffff;
+    padding: 0.1rem;
+    font-weight: 200;
+    position: absolute;
+    border-radius: 0 0 10px 0;
+    top: 0;
+    left: 0;
+}
+
+.card--name {
+    text-transform: capitalize;
+    color: rgb(231, 229, 36);
+    /*background-color: rgb(1, 71, 61);*/
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card--image {
+    width: 150px;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.card--details {
+    font-size: 0.8rem;
+    color: #dbca80;
+}
+
+/*
+#holographic {
+  width: 12rem auto;
+  background-image: linear-gradient(
+    to right,
+    rgb(194, 255, 182),
+    rgb(255, 163, 182),
+    rgb(221, 169, 255),
+    rgb(162, 209, 255)
+  );
+  background-size: 100%;
+}
+*/
+
+.playbtnid i:hover {
+    color: rgb(237, 247, 32);
+    cursor: pointer;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+/*
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+*/
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+/*
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: rgb(251, 55, 55);
+}
+*/
